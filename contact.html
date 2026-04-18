@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Travel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a
+            href="landingpage.html"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            "
+          >
+            <i class="fas fa-plane-departure"></i>
+            <div>
+              <span class="logo-text">Travel with</span>
+              <span class="logo-subtext">Giridhar</span>
+            </div>
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="guides.html">Tour Guides</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="#"><i class="fas fa-search"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="form-section">
+        <h1>Contact Us</h1>
+        <p class="subtitle">
+          If you have any queries, please do not hesitate to contact us.
+        </p>
+
+        <form action="#" method="post">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter a valid email address"
+            required
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your Name"
+            required
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Enter your phone (e.g. +141555)"
+          />
+          <input
+            type="text"
+            name="date"
+            placeholder="mm/dd/yyyy"
+            onfocus="this.type = 'date'"
+          />
+          <textarea
+            name="message"
+            rows="3"
+            placeholder="Enter your message"
+            class="full-width"
+          ></textarea>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+
+      <div class="image-section">
+        <img
+          src="https://media.istockphoto.com/id/868924070/photo/traffic-at-the-airport.webp?a=1&b=1&s=612x612&w=0&k=20&c=8em-DGtTGz-ecAfNugsfDOFZHePfzsshC46CTaGE6DE="
+          alt="Aeroplane"
+        />
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <h3>Travel with Giridhar</h3>
+          <p>Your ultimate guide to exploring the world.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-socials">
+          <p>© 2026 Travel with Giridhar. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
