@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel With Giridhar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    
+  </head>
+  <style>
+    /* General Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.logo i {
+    font-size: 1.5rem;
+    color: #ff4d4d;
+}
+
+.logo-text { font-size: 1.2rem; display: block; }
+.logo-subtext { font-size: 0.7rem; color: #888; letter-spacing: 2px; }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover { color: #ff4d4d; }
+
+/* Hero Section */
+.hero-section {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://media.istockphoto.com/id/1404349213/photo/old-fishing-boats-on-beach-in-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=MdJ4xJQOEFDW54S_xreaxS8rbZbeLwtK4k4RxaPOweo=') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-icon { font-size: 3rem; margin-bottom: 20px; color: #ff4d4d; }
+.hero-section h1 { font-size: 3rem; margin-bottom: 10px; }
+.hero-section p { font-size: 1.2rem; margin-bottom: 20px; }
+
+.btn-primary {
+    background: #ff4d4d;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+/* Featured Destinations Grid */
+.featured-destinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover { transform: translateY(-10px); }
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content { padding: 20px; text-align: center; }
+.card-content h1 { font-size: 1.4rem; margin-bottom: 10px; }
+.card-content p { font-size: 0.9rem; color: #666; margin-bottom: 20px; }
+
+.btn {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #ff4d4d;
+    color: #ff4d4d;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover { background: #ff4d4d; color: #fff; }
+
+/* Footer */
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 40px 5%;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.footer-links a:hover { color: #fff; }
+  </style>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a
+            href="landingpage.html"
+            style="
+              text-decoration: none;
+              color: inherit;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            "
+          >
+            <i class="fas fa-plane-departure"></i>
+            <div>
+              <span class="logo-text">Travel with</span>
+              <span class="logo-subtext">Giridhar</span>
+            </div>
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="guides.html">Tour Guides</a></li>
+          <li><a href="services.html">services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="landingpage.html"><i class="fas fa-search"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <i class="fas fa-paper-plane hero-icon"></i>
+          <h1>Travel without limits</h1>
+          <p>
+            Create lifetime memories in unforgettable locations around the
+            world.
+          </p>
+          <a href="#tours" class="btn-primary">Choose your tour</a>
+        </div>
+      </section>
+
+      <section id="tours" class="featured-destinations">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1625505826533-5c80aca7d157?w=500&auto=format&fit=crop&q=60"
+            alt="Palm-fringed beach in Goa"
+          />
+          <div class="card-content">
+            <h2>Goa – The Beach Paradise</h2>
+            <p>
+              Relax on golden beaches, enjoy vibrant nightlife, and explore
+              Portuguese heritage. A perfect mix of adventure and food.
+            </p>
+            <a href="#" class="btn">Explore Now</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1579689189009-874f5cac2db5?w=500&auto=format&fit=crop&q=60"
+            alt="Snowy peaks in Manali"
+          />
+          <div class="card-content">
+            <h2>Manali – Mountain Escape</h2>
+            <p>
+              Surrounded by snow-capped peaks and lush valleys, ideal for nature
+              lovers and adventure seekers looking for a chill vibe.
+            </p>
+            <a href="#" class="btn">Explore Now</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?w=500&auto=format&fit=crop&q=60"
+            alt="Historic monument in Delhi"
+          />
+          <div class="card-content">
+            <h2>Delhi – Heart of India</h2>
+            <p>
+              Discover a blend of history and modern culture. From ancient
+              monuments to bustling markets and world-class street food.
+            </p>
+            <a href="#" class="btn">Explore Now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <h3>Travel with Giridhar</h3>
+          <p>Your ultimate guide to exploring the world.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-socials">
+          <p>© 2026 Travel with Giridhar. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
